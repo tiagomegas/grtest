@@ -1,0 +1,83 @@
+[
+  {
+    "id": "login.loginBtn",
+    "description": "Button label to execute the login",
+    "defaultMessage": "Log in",
+    "message": "",
+    "files": [
+      "src/routes/login/Login.js"
+    ]
+  },
+  {
+    "id": "login.pword",
+    "description": "Label indicating to input user password",
+    "defaultMessage": "Password:",
+    "message": "",
+    "files": [
+      "src/routes/login/Login.js"
+    ]
+  },
+  {
+    "id": "login.subtitle",
+    "description": "Sub title with the login page discription",
+    "defaultMessage": "Log in with your company email address.",
+    "message": "",
+    "files": [
+      "src/routes/login/Login.js"
+    ]
+  },
+  {
+    "id": "login.title",
+    "description": "Title on the login page",
+    "defaultMessage": "Log In",
+    "message": "",
+    "files": [
+      "src/routes/login/Login.js"
+    ]
+  },
+  {
+    "id": "login.user",
+    "description": "Label indicating to input user email",
+    "defaultMessage": "Email address:",
+    "message": "",
+    "files": [
+      "src/routes/login/Login.js"
+    ]
+  },
+  {
+    "id": "login.show400",
+    "description": "Error message shown wen there is a login error",
+    "defaultMessage": "Incorrect email and/or password.",
+    "message": "",
+    "files": [
+      "src/routes/login/Login.js"
+    ]
+  },
+  {
+    "id": "login.showDefault",
+    "description": "Error message shown wen there is a login error",
+    "defaultMessage": "Incorrect email and/or password.",
+    "message": "",
+    "files": [
+      "src/routes/login/Login.js"
+    ]
+  },
+  {
+    "id": "errorPage.description",
+    "description": "Description in error page",
+    "defaultMessage": "There was some problem. Please ty again later or contact support",
+    "message": "",
+    "files": [
+      "src/routes/error/ErrorPage.js"
+    ]
+  },
+  {
+    "id": "errorPage.title",
+    "description": "Error page title",
+    "defaultMessage": "Error!",
+    "message": "",
+    "files": [
+      "src/routes/error/ErrorPage.js"
+    ]
+  }
+]

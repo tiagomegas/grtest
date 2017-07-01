@@ -1,0 +1,6 @@
+{
+  "name": "Trailer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Trailer.js"
+}
