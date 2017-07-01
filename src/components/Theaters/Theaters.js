@@ -7,8 +7,9 @@ import withStyles  from 'isomorphic-style-loader/lib/withStyles';
 import requests from '../../data/requests.js';
 // React components -----------------------------------------------------------------
 import UI    from '../ui';
+import Input from '../ui/Input';
 // Redux store -----------------------------------------------------------------
-import { setField, resetFlow } from '../../actions/leasingFlow';
+import { setField } from '../../actions/banner';
 // ----- CSS Dependencies ------------------------------------------------------
 import s from './Theaters.css';
 
@@ -19,11 +20,34 @@ class Theaters extends React.Component {
     this.state = {
     };
   }
+  performSearch = () => {
 
+  }
+  inputChange = () => {
+
+  }
+  renderDates = () => {
+    let dates=[];
+    let date;
+    for(let i=0;i < 4; i++){
+      date = moment().add(i);
+      
+      dates.push(<div>{date.day()}</div>)
+    }
+    console.log(dates);
+    return dates;
+  }
   render() {
     return(
       <div className="Trailer">
-        Trailer!
+        <Input
+          icon="fa fa-search"
+          format="numeric"
+          onFieldChange={this.inputChange}
+          className="form-control"
+          placeholder="Search City"
+        />
+        {this.renderDates()}
       </div>
     )
   }
@@ -31,7 +55,7 @@ class Theaters extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  leasingFlow: state.leasingFlowReducer
+  bannerReducer: state.bannerReducer
 });
 
 export default connect(mapStateToProps)(withStyles(s)(Theaters))

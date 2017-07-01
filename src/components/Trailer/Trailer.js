@@ -8,7 +8,7 @@ import requests from '../../data/requests.js';
 // React components -----------------------------------------------------------------
 import UI    from '../ui';
 // Redux store -----------------------------------------------------------------
-import { setField, resetFlow } from '../../actions/leasingFlow';
+import { setField, resetFlow } from '../../actions/banner';
 // ----- CSS Dependencies ------------------------------------------------------
 import s from './Trailer.css';
 
@@ -33,7 +33,7 @@ class Trailer extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  leasingFlow: state.leasingFlowReducer
+  bannerReducer: state.bannerReducer
 });
 
 export default connect(mapStateToProps)(withStyles(s)(Trailer))
