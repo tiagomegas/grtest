@@ -24,12 +24,11 @@ class Trailer extends React.Component {
     return(
       <div className="Trailer">
         <div className="videoWrapper">
-          <iframe src={"http://www.youtube.com/embed/U0D3AOldjMU"} frameBorder="0" allowFullScreen></iframe>
+          <iframe src={"http://www.youtube.com/embed/VSB4wGIdDwo"} frameBorder="0" allowFullScreen></iframe>
         </div>
       </div>
     )
   }
-
 }
 
 const mapStateToProps = state => ({

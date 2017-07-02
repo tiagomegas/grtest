@@ -16,7 +16,7 @@ class Home extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <div className="leasingLayout-flow">
+          <div>
             <MainFlow />
           </div>
         </div>

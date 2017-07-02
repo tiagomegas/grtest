@@ -1,23 +1,33 @@
 import {
   SET_FIELD,
-  SET_FIELD_OF_OBJECT,
+  SAVE_REQUEST,
+  /*SET_FIELD_OF_OBJECT,
   RESET_FLOW,
   CANCEL_FLOW,
-  SELECT_PRODUCT,
+  SELECT_PRODUCT,*/
 } from '../constants';
 
 const initState = {
     viewIdx: 0,
+    showtimes: [],
+    cinemas: [{name:'', location: {address:''}}],
+    selectedCinema: 0,
+    sessions: {}
   }
 
 
 const leasingFlow = (state = initState, action) => {
   switch (action.type) {
-    case SET_FIELD:{
-      let obj = {};
+    case SET_FIELD: {
+      const obj = {};
       obj[action.field] = action.value;
-      return Object.assign({},state,obj)
+      return Object.assign({}, state, obj)
     }
+    case SAVE_REQUEST: {
+      const obj = {cinemas: action.cinemas, showtimes: action.showtimes };
+      return Object.assign({}, state, obj)
+    }
+    /*
     case SET_FIELD_OF_OBJECT:{
       let obj = {}, newObject={};
       let tempObj = state[action.object];
@@ -54,7 +64,7 @@ const leasingFlow = (state = initState, action) => {
         },
       };
       return Object.assign({}, state, obj);
-    }
+    }*/
     default:
       return state;
   }

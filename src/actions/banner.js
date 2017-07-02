@@ -1,9 +1,10 @@
 import {
   SET_FIELD,
-  SET_FIELD_OF_OBJECT,
+  SAVE_REQUEST,
+  /*SET_FIELD_OF_OBJECT,
   SET_FIELD_OF_OBJECT_IN_ARRAY,
   RESET_FLOW,
-  SELECT_PRODUCT,
+  SELECT_PRODUCT,*/
 } from '../constants';
 
 /*                         */
@@ -18,7 +19,16 @@ export function setField(field, value) {
   };
 }
 
-export function resetFlow() {
+export function saveRequest(data) {
+  return {
+    type: SAVE_REQUEST,
+    cinemas: data.cinemas,
+    showtimes: data.showtimes
+  };
+}
+
+
+/*export function resetFlow() {
   return {
     type: RESET_FLOW,
   };
@@ -55,3 +65,4 @@ export function setFieldOfObjectInArray(array, index, attribute, value) {
     value,
   };
 }
+*/
