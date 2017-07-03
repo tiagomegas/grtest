@@ -1,0 +1,6 @@
+{
+  "name": "SessionInfo",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SessionInfo.js"
+}
